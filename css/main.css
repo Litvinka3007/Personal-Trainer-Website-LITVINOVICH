@@ -1,0 +1,162 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  border: 0;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.5em;
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  letter-spacing: -0.025em;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Banner */
+
+#banner {
+  background-attachment: fixed;
+  background-color: #272833;
+  background-image: url("../images/banner-image.jpg");
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  z-index: 21;
+}
+
+#banner:before {
+  content: '';
+  display: inline-block;
+  height: 100vh;
+  vertical-align: middle;
+  width: 1%;
+}
+
+#banner .content {
+  display: inline-block;
+  margin-right: 1%;
+  max-width: 95%;
+  padding: 6em;
+  position: relative;
+  text-align: right;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+#banner .content header {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#banner .content header h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+#banner .content header p {
+  margin: 0.5em 0 0 0;
+  top: 0;
+}
+
+#banner .content .image {
+  border-radius: 100%;
+  display: inline-block;
+  height: 25em;
+  margin-left: 3em;
+  vertical-align: middle;
+  width: 25em;
+}
+
+#banner .content .image img {
+  border-radius: 100%;
+  display: block;
+  width: 100%;
+}
+
+body.is-touch #banner {
+  background-attachment: scroll;
+}
+
+/* Section/Article */
+
+header p {
+  color: #ffffff;
+  position: relative;
+  margin: 0 0 1.5em 0;
+}
+
+header h2 + p {
+  font-size: 1.25em;
+  margin-top: -1em;
+  line-height: 1.75em;
+}
+
+/* Image */
+
+.image {
+  border-radius: 4px;
+  border: 0;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+/*TRAININGS*/
+
+#trainings {
+  margin: 2em 0 2em 0;
+}
+
+.section-title {
+  font-weight: 0.5rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.training-options {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.training-option {
+  background: #5d5d5d;
+  text-align: center;
+  padding: 16px;
+  margin: 8px;
+  display: inline-block;
+  width: 30%;
+  height: 97vh;
+  vertical-align: middle;
+}
+
+.training-option__name {
+  line-height: normal;
+}
+
+.training-option__description {
+  margin: 0;
+  padding: 1em;
+  text-align:center;
+  line-height: normal;
+  color: white;
+}
