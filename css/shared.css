@@ -11,6 +11,7 @@ html {
 
 html, body {
   background: #1c1d26;
+  margin: 0;
 }
 
 body, input, select, textarea {
@@ -508,21 +509,24 @@ body, input, select, textarea {
 
 /*BUTTON*/
 
-.button {
+button {
   background:#4b4544;;
   color: white;
   font-weight: 0.8em;
   border: 2px solid white;
-  padding: 8px;
+  margin: 0;
+  padding: 0.7em;  
+  text-decoration:none;
+  text-align:center;
   cursor: pointer;
 }
 
-.button:hover,
-.button:active {
+button:hover,
+button:active {
   background: white;
   color: black;
 }
 
-.button:focus {
+button:focus {
   outline: none;
 }
