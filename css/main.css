@@ -24,7 +24,7 @@ h3 {
 }
 
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 /* Banner */
@@ -145,8 +145,9 @@ header h2 + p {
   margin: 8px;
   display: inline-block;
   width: 30%;
-  height: 97vh;
+  height: 90vh;
   vertical-align: middle;
+  position: relative;
 }
 
 .training-option__name {
@@ -159,4 +160,171 @@ header h2 + p {
   text-align:center;
   line-height: normal;
   color: white;
+}
+
+.training-option__button {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/*MEAL PLAN/ONLINE-COACHING*/
+
+#meal-plan,
+#online-coaching,
+#consultations {
+  margin: 2em 5em 2em 5em;
+}
+
+.online-coaching__container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.online-coaching__info {
+  margin-right: 3em;
+  flex: 2;
+}
+
+.meal-plan__description,
+.online-coaching__description,
+.consultations__description {
+  text-indent: 2em;
+  text-align: justify;
+}
+
+.meal-plan__items,
+.online-coaching__features {
+  list-style-type: disc;
+}
+
+/*.online-coaching__packages {
+  width: 50%;
+  margin: 0 1em;
+  padding: 0;
+  text-align: center;
+}
+
+.six-weeks-package,
+.twelve-weeks-package, 
+.twenty-four-weeks-package {
+  margin: 10px;
+  padding: 20px 10px;
+  width: calc(33% - 24px);
+  display: inline-block;
+  background-color: black;
+  border: 1px solid black;
+  text-align: center;
+}*/
+
+/*FORM*/
+
+.contact-form {
+  flex: 1;
+}
+
+.form-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(251, 251, 251, 0.2);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.contact-form {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 0 30px 30px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
+  border-radius: 2px;
+}
+
+.contact-form__title {
+  box-sizing: border-box;
+  margin: 0 -30px 30px;
+  padding: 15px 30px;
+  width: calc(100% + 60px);
+  line-height: 1.5;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+  background-color:#5d5d5d;
+  color: #fff;
+}
+
+.contact-form__description {
+  display: none;
+  text-align: center;
+  font-size: 18px;
+}
+
+.contact-form__input-wrapper {
+  margin-bottom: 20px;
+}
+
+.contact-form__input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border: 1px solid #e2e2e2;
+  background: #fbfbfb;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form__error {
+  font-size: .875rem;
+}
+
+.contact-form__button {
+  background: #5d5d5d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 240px;
+  margin: 30px auto 0;
+  border-radius: 5px;
+  height: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  outline: none;
+  transition: .3s;
+  padding: 2px 0 0 0;
+}
+
+.contact-form__button:hover {
+  transition: .3s;
+  background: #1c1d26;
+}
+
+@media (max-width: 480px) {
+  .form-wrapper {
+      padding: 15px;
+  }
+  .contact-form {
+      padding: 0 15px 15px;
+  }
+  .contact-form__title {
+      margin: 0 -15px 30px;
+      padding: 15px 30px;
+      width: calc(100% + 30px);
+      font-size: 18px;
+  }
 }
