@@ -1,0 +1,59 @@
+main {
+  padding: 6rem 9rem;
+}
+
+.literature-recommendations__title {
+  font-weight: 0.5rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.literature-recommendations__info {
+  margin-bottom: 3rem;
+  color: white;
+  text-indent: 2em;
+  text-align: justify;
+}
+
+.literature-recommendations__book {
+  margin: 3rem 0 10rem 0;
+}
+
+.literature-recommendations__subtitle {
+  font-weight: 1em;
+  color: white;
+  text-align: center;
+}
+
+.literature-recommendations__book-name {
+  margin: 3em 0 2em 0;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+}
+
+.literature-recommendations__book-image {
+  max-width: 15%; 
+  height: auto;
+}
+
+.leftimg {
+  float:left; 
+  margin: 0 3em 3em 0; 
+}
+
+.rightimg  {
+  float: right; 
+  margin: 0 0 3em 3em; 
+}
+
+.literature-recommendations__book-description {
+  color: white;
+  text-indent: 2em;
+  text-align: justify;
+}
+
+article div:last-child {
+  margin-bottom: 4rem;
+}
