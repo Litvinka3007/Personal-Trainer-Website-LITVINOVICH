@@ -1,0 +1,31 @@
+main {
+  padding: 4rem;
+}
+
+.about-trainer {
+  margin: 3rem 0;
+}
+
+.about-trainer__info {
+  margin-top: 3em;
+}
+
+.about-trainer__title {
+  font-weight: 0.5rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-trainer__photo {
+  float: right;
+  margin: 0 0 3em 3em;
+  max-width: 40%; 
+  height: auto;
+}
+
+.about-trainer__text {
+  color: white;
+  text-indent: 2em;
+  text-align: justify;
+}
