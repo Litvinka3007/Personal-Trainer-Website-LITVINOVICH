@@ -1,0 +1,30 @@
+main {
+  padding: 4rem 9rem;
+}
+
+.testimonials__title {
+  font-weight: 0.5rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.testimonials__content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 1rem 0 5rem 0;
+}
+
+video {
+  padding: 1rem 2rem;
+  width: 40%;
+  height: auto;
+}
+
+.testimonials__cta-button {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); 
+}
