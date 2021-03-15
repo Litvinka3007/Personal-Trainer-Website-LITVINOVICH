@@ -145,7 +145,7 @@ header h1 + p {
   margin: 8px;
   display: inline-block;
   width: 30%;
-  height: 90vh;
+  height: 98vh;
   vertical-align: middle;
   position: relative;
 }
@@ -157,12 +157,12 @@ header h1 + p {
 .training-option__description {
   margin: 0;
   padding: 1em;
-  text-align:center;
+  text-align: center;
   line-height: normal;
   color: white;
 }
 
-.training-option__button {
+.training-option__cta-button {
   position: absolute;
   bottom: 30px;
   left: 50%;
@@ -174,7 +174,7 @@ header h1 + p {
 #meal-plan,
 #online-coaching,
 #consultations {
-  margin: 4em 5em 2em 5em;
+  margin: 4em 5em 6em 5em;
 }
 
 .online-coaching__container {
@@ -314,4 +314,14 @@ textarea {
       width: calc(100% + 30px);
       font-size: 18px;
   }
+}
+
+/*CONSULTATIONS*/
+
+.consultations__cta-button {
+  position: absolute;
+  margin-top: 2rem;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
