@@ -81,6 +81,10 @@ ul {
   text-transform: uppercase;
 }
 
+.main-page__cta-button-caption {
+  font-size: 0.8rem;
+}
+
 #banner .content .main-photo {
   border-radius: 100%;
   display: inline-block;
