@@ -76,6 +76,11 @@ ul {
   top: 0;
 }
 
+.main-page__cta-button {
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
 #banner .content .main-photo {
   border-radius: 100%;
   display: inline-block;
