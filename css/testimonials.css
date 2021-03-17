@@ -1,9 +1,9 @@
 main {
-  padding: 4rem 9rem;
+  padding: 5rem 9rem;
 }
 
 .testimonials__title {
-  font-weight: 0.5rem;
+  font-size: 1.5rem;
   color: white;
   text-align: center;
   text-transform: uppercase;
@@ -13,7 +13,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: space-around;
+  align-items: space-between;
   padding: 1rem 0 5rem 0;
 }
 
@@ -22,9 +22,19 @@ main {
 }
 
 video {
-  padding: 1rem 2rem;
-  width:350px;
+  padding: 1rem 2rem 0 2rem;
+  width: 350px;
   height: auto;
+}
+
+.testimonials__client-name {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.testimonials__client-message {
+  font-size: 1rem;
+  text-align: center;
 }
 
 .testimonials__cta-button {
