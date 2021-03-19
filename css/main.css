@@ -209,6 +209,8 @@ header h1 + p {
   list-style-type: disc;
 }
 
+/*ONLINE-COACHING PACKAGES*/
+
 .six-weeks-package,
 .twelve-weeks-package, 
 .twenty-four-weeks-package {
@@ -216,9 +218,40 @@ header h1 + p {
   margin: 10px;
   padding: 20px 10px;
   width: calc(33% - 24px);  
-  background-color: black;
   border: 1px solid black;
+  background-color: black;
   text-align: center;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+
+.six-weeks-package__side,
+.twelve-weeks-package__side, 
+.twenty-four-weeks-package__side {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;              
+  transform: translate(-50%, -40%);
+}
+
+.six-weeks-package:hover,
+.twelve-weeks-package:hover, 
+.twenty-four-weeks-package:hover {
+  transform: rotateY(180deg);
+}
+
+.six-weeks-package .six-weeks-package__side,
+.twelve-weeks-package .twelve-weeks-package__side,
+.twenty-four-weeks-package .twenty-four-weeks-package__side {
+  backface-visibility: hidden;
+}
+
+.six-weeks-package .six-weeks-package__side-back,
+.twelve-weeks-package .twelve-weeks-package__side-back,
+.twenty-four-weeks-package .twenty-four-weeks-package__side-back {
+  overflow: hidden;
+  transform: rotateY(180deg);  
 }
 
 /*FORM*/
