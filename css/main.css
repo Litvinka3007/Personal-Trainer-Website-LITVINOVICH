@@ -27,7 +27,7 @@ ul {
 	list-style: none;
 }
 
-/* Banner */
+/* BANNER */
 
 #banner {
   background-attachment: fixed;
@@ -76,13 +76,18 @@ ul {
   top: 0;
 }
 
-.main-page__cta-button {
-  margin-top: 5rem;
-  text-transform: uppercase;
+body.is-touch #banner {
+  background-attachment: scroll;
 }
 
-.main-page__cta-button-caption {
-  font-size: 0.8rem;
+/* Image */
+
+.main-photo {
+  border-radius: 4px;
+  border: 0;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
 }
 
 #banner .content .main-photo {
@@ -100,11 +105,68 @@ ul {
   width: 100%;
 }
 
-body.is-touch #banner {
-  background-attachment: scroll;
+/*Button*/
+
+.main-page__cta-button {
+  position: relative;
+  display: inline-block;
+  margin-top: 5rem;
+  padding: 0.7em;  
+  width: 12.5rem;
+  height: 3.5rem;
+  text-align: center;
+  line-height: 1.3rem;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #475055, #886a7b, #1a3b79, #aabbc4);
+  background-size: 400%;
+  border-radius: 30px;
+  z-index: 1;
+  cursor: pointer;
 }
 
-/* Section/Article */
+.main-page__cta-button:hover {
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.main-page__cta-button:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #475055, #886a7b, #1a3b79, #aabbc4);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: .5s;
+}
+
+.main-page__cta-button:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+.main-page__cta-button-caption {
+  font-size: 0.8rem;
+}
+
+/* SECTION/ARTICLE */
 
 header p {
   color: #ffffff;
@@ -116,16 +178,6 @@ header h1 + p {
   font-size: 1.25em;
   margin-top: -1em;
   line-height: 1.75em;
-}
-
-/* Image */
-
-.main-photo {
-  border-radius: 4px;
-  border: 0;
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
 }
 
 /*TRAININGS*/
