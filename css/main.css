@@ -209,6 +209,11 @@ header h1 + p {
   height: 89vh;
   vertical-align: middle;
   position: relative;
+  transition: all 0.3s ease;
+}
+
+.training-option:hover {
+  transform: scale(1.1);
 }
 
 .training-option__name {
