@@ -90,49 +90,6 @@ img {
   top: 0;
 }
 
-#header nav {
-  position: absolute;
-  right: 1em;
-  top: 0;
-}
-
-#header nav ul {
-  margin: 0;
-}
-
-#header nav ul li {
-  display: inline-block;
-  margin-left: 1em;
-}
-
-#header nav ul li a, #header nav ul li span {
-  text-decoration: none;
-  border: 0;
-  color: inherit;
-  display: inline-block;
-  height: inherit;
-  line-height: inherit;
-  outline: 0;
-}
-
-#header nav ul li a.button, #header nav ul li span.button {
-  height: 2em;
-  line-height: 2em;
-  padding: 0 1.25em;
-}
-
-#header nav ul li a:not(.button):before, #header nav ul li span:not(.button):before {
-  margin-right: 0.5em;
-}
-
-#header nav ul li.active > a, #header nav ul li.active > span {
-  color: #e44c65;
-}
-
-#header nav ul li > ul {
-  display: none;
-}
-
 body.landing #page-wrapper {
   padding-top: 0;
 }
@@ -145,7 +102,10 @@ body.landing #header {
 
 /* Nav */
 
-#nav {
+#header nav {
+  position: absolute;
+  right: 1em;
+  top: 0;
   text-transform: uppercase;
 }
 
@@ -167,13 +127,18 @@ body.landing #header {
 }
 
 #nav > ul > li > a {
-  color: #5d5d5d;
-  text-decoration: none;
+  display: inline-block;
   padding: 0.3em 0.5em 0.3em 0.5em;
+  height: inherit;
+  line-height: inherit;
+  color: inherit;
+  border: 0;
+  text-decoration: none;  
+  outline: 0;  
 }
 
 #nav > ul > li:hover > a, #nav > ul > li.active > a {
-  color: #e44c65;
+  color: #ffffff;
 }
 
 /* Icon */
