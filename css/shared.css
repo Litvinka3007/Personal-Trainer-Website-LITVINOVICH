@@ -10,8 +10,8 @@ html {
 }
 
 html, body {
-  background: #1c1d26;
   margin: 0;
+  background: #1c1d26;
 }
 
 body, input, select, textarea {
