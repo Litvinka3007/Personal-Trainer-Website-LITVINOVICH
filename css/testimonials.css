@@ -2,9 +2,9 @@ main {
   padding: 5rem 9rem;
 }
 
-.testimonials__title {
-  font-size: 1.5rem;
+.testimonials__title {  
   color: white;
+  font-size: 1.5rem;
   text-align: center;
   text-transform: uppercase;
 }

@@ -2,9 +2,9 @@ main {
   padding: 6rem 9rem;
 }
 
-.literature-recommendations__title {
-  font-size: 1.5rem;
+.literature-recommendations__title {  
   color: white;
+  font-size: 1.5rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -20,9 +20,9 @@ main {
   margin: 3rem 0 10rem 0;
 }
 
-.literature-recommendations__subtitle {
-  font-weight: 1em;
+.literature-recommendations__subtitle {  
   color: white;
+  font-size: 1em;
   text-align: center;
 }
 
@@ -39,7 +39,7 @@ main {
 }
 
 .leftimg {
-  float:left; 
+  float: left; 
   margin: 0 3em 3em 0; 
 }
 

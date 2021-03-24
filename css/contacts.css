@@ -14,12 +14,12 @@ main {
 .contact-form {
   flex-shrink: 1;  
   box-sizing: border-box;
+  padding: 0 1.8em 1.8em;
   width: 100%;
   max-width: 400px;  
-  padding: 0 1.8em 1.8em;
-  background: #fff;
   border-radius: 0.25em;
   box-shadow: 0 0.3em 0.4em rgba(0, 0, 0, .4);
+  background: #fff;  
 }
 
 .contact-form__title {
@@ -71,8 +71,7 @@ textarea {
 }
 
 .contact-form__button {
-  display: flex;
-  background: #5d5d5d;
+  display: flex;  
   justify-content: center;
   align-items: center;
   margin: 1.8em auto 0;
@@ -83,7 +82,8 @@ textarea {
   border: none;
   -webkit-appearance: none;
   border-radius: 0.3em;
-  outline: none;  
+  outline: none;
+  background: #5d5d5d;  
   color: #fff;
   font-size: 1rem;
   font-weight: 700;
