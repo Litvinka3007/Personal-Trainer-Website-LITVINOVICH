@@ -23,15 +23,15 @@ body, input, select, textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1em 0;
   color: #ffffff;
   font-weight: 300;
-  line-height: 1em;
-  margin: 0 0 1em 0;
+  line-height: 1em;  
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: inherit;
   border: 0;
+  color: inherit;  
   text-decoration: none;
 }
 
@@ -52,8 +52,8 @@ ul {
 }
 
 #logo a {
-  color: #ffffff;
   border: 0;
+  color: #ffffff;  
   text-decoration: none;
 }
 
@@ -69,28 +69,28 @@ img {
 }
 
 .main-header {
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(39, 40, 51, 0.965);
-  box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
-  height: 3.5em;  
-  line-height: 3.5em;
-  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;  
+  width: 100%;
+  height: 3.5em;  
+  box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+  background: rgba(39, 40, 51, 0.965);  
+  line-height: 3.5em;
+  z-index: 100;  
   cursor: default;
 }
 
 .main-header h1 {
-  height: inherit;
-  left: 1.25em;
-  line-height: inherit;
-  margin: 0;
   position: absolute;
   top: 0;
+  left: 1.25em;
+  margin: 0;
+  height: inherit;  
+  line-height: inherit;  
 }
 
 body.landing #page-wrapper {
@@ -98,19 +98,19 @@ body.landing #page-wrapper {
 }
 
 body.landing .main-header {
-  background: transparent;
-  box-shadow: none;
   position: absolute;
+  box-shadow: none;
+  background: transparent;  
 }
 
 .toggle-button {
-  width: 3rem;
-  background: transparent;
-  border: none;
-  cursor: pointer;
   padding-top: 0;
   padding-bottom: 0;
+  width: 3rem;
   vertical-align: middle;
+  border: none;
+  background: transparent;  
+  cursor: pointer;  
 }
 
 .toggle-button:focus {
@@ -118,11 +118,11 @@ body.landing .main-header {
 }
 
 .toggle-button__bar {
-  width: 100%;
-  height: 0.2rem;
-  background: white;
   display: block;
   margin: 0.6rem 0;
+  width: 100%;
+  height: 0.2rem;
+  background: white;  
 }
 
 .main-nav {
@@ -130,10 +130,10 @@ body.landing .main-header {
 }
 
 .main-nav__items {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
+  padding: 0;
+  margin: 0;  
+  list-style: none;  
 }
 
 .main-nav__item {
@@ -142,10 +142,10 @@ body.landing .main-header {
 
 .main-nav__item a,
 .mobile-nav__item a {
-  text-decoration: none;
+  padding: 0.2rem 0;
   color: white;
   font-weight: bold;
-  padding: 0.2rem 0;
+  text-decoration: none;  
 }
 
 .main-nav__item a:hover,
@@ -165,26 +165,26 @@ body.landing .main-header {
 }
 
 .mobile-nav {
-  display: none;
   position: fixed;
-  z-index: 101;
   top: 0;
   left: 0;
-  background: black;
+  display: none;
   width: 25%;
   height: 100vh;
+  background: black;
+  z-index: 101;  
 }
 
 .mobile-nav__items {
-  width: 25%;
-  height: 100%;
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0 auto;
+  width: 25%;
+  height: 100%;
+  list-style: none;  
 }
 
 .mobile-nav__item {
@@ -198,9 +198,9 @@ body.landing .main-header {
 /* Icon */
 
 .icon {
-  text-decoration: none;
-  border-bottom: none;
   position: relative;
+  border-bottom: none;  
+  text-decoration: none;  
 }
 
 .icon:before {
@@ -257,16 +257,16 @@ body.landing .main-header {
 /* Icons */
 
 ul.icons {
-  list-style: none;
   padding-left: 0;
+  list-style: none;  
   cursor: default;
 }
 
 ul.icons li {
   display: inline-block;
-  height: 2.5em;
-  line-height: 2.5em;
   padding: 0 0.5em;
+  height: 2.5em;
+  line-height: 2.5em;  
 }
 
 ul.icons li .icon {
@@ -311,8 +311,8 @@ dl {
 /* Footer */
 
 #footer {
-  background: #272833;
   padding: 6em 0;
+  background: #272833;  
   text-align: center;
 }
 
@@ -339,26 +339,26 @@ dl {
 }
 
 #footer .copyright {
+  padding: 0;
+  margin: 2em 0 0 0;
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.8em;
-  line-height: 1em;
-  margin: 2em 0 0 0;
-  padding: 0;
   text-align: center;
+  line-height: 1em;  
 }
 
 #footer .copyright li {
-  border-left: solid 1px rgba(255, 255, 255, 0.3);
   display: inline-block;
-  list-style: none;
-  margin-left: 1.5em;
   padding-left: 1.5em;
+  margin-left: 1.5em;
+  border-left: solid 1px rgba(255, 255, 255, 0.3);  
+  list-style: none;  
 }
 
 #footer .copyright li:first-child {
-  border-left: 0;
-  margin-left: 0;
   padding-left: 0;
+  margin-left: 0;
+  border-left: 0;
 }
 
 #footer .copyright li a {
@@ -564,14 +564,14 @@ body, input, select, textarea {
 /*BUTTON*/
 
 button {
+  padding: 0.7em;
+  margin: 0;
+  border: 2px solid white;   
   background:#4b4544;;
   color: white;
   font-weight: 0.8em;
-  border: 2px solid white;
-  margin: 0;
-  padding: 0.7em;  
-  text-decoration: none;
-  text-align: center;
+  text-align: center;   
+  text-decoration: none;  
   cursor: pointer;
 }
 

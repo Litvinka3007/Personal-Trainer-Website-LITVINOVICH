@@ -54,26 +54,26 @@ body.is-touch #banner {
 /* Image */
 
 .main-photo {
-  border-radius: 4px;
-  border: 0;
-  display: inline-block;
   position: relative;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;  
   overflow: hidden;
 }
 
 #banner .content .main-photo {
-  border-radius: 100%;
   display: inline-block;
-  height: 25em;
   margin-left: 3em;
-  vertical-align: middle;
   width: 25em;
+  height: 25em;
+  border-radius: 100%;
+  vertical-align: middle;  
 }
 
 #banner .content .main-photo img {
-  border-radius: 100%;
   display: block;
   width: 100%;
+  border-radius: 100%;  
 }
 
 /*Button*/
@@ -140,14 +140,14 @@ body.is-touch #banner {
 /* SECTION/ARTICLE */
 
 header p {
-  color: #ffffff;
   position: relative;
   margin: 0 0 1.5em 0;
+  color: #ffffff;  
 }
 
 header h1 + p {
-  font-size: 1.25em;
   margin-top: -1em;
+  font-size: 1.25em;  
   line-height: 1.75em;
 }
 
@@ -158,28 +158,28 @@ header h1 + p {
 }
 
 .section-title {
-  font-weight: 0.5rem;
   color: white;
+  font-size: 0.5rem;  
   text-align: center;
   text-transform: uppercase;
 }
 
 .training-options {
-  width: 80%;
   margin: auto;
+  width: 80%;  
   text-align: center;
 }
 
 .training-option {
-  background: #5d5d5d;
-  text-align: center;
+  position: relative;
+  display: inline-block;
   padding: 16px;
   margin: 8px;
-  display: inline-block;
   width: 30%;
   height: 89vh;
-  vertical-align: middle;
-  position: relative;
+  background: #5d5d5d;  
+  vertical-align: middle;  
+  text-align: center;  
   transition: all 0.3s ease;
 }
 
@@ -192,11 +192,11 @@ header h1 + p {
 }
 
 .training-option__description {
-  margin: 0;
   padding: 1em;
-  text-align: center;
-  line-height: normal;
+  margin: 0;
   color: white;
+  text-align: center;  
+  line-height: normal;  
 }
 
 .training-option__cta-button {
@@ -345,18 +345,18 @@ textarea {
 
 .contact-form__button {
   display: flex;
-  background: #5d5d5d;
   justify-content: center;
   align-items: center;
-  margin: 1.8em auto 0;
   padding: 0.125em 0 0 0;
+  margin: 1.8em auto 0;  
   width: 100%;
   max-width: 50%;
   height: 3.125em;
   border: none;
   -webkit-appearance: none;
   border-radius: 0.3em;
-  outline: none;  
+  outline: none;
+  background: #5d5d5d;  
   color: #fff;
   font-size: 1rem;
   font-weight: 700;
