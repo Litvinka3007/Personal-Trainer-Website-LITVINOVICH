@@ -159,28 +159,41 @@ header h1 + p {
 
 .section-title {
   color: white;
-  font-size: 0.5rem;  
+  font-size: 2rem;  
   text-align: center;
   text-transform: uppercase;
 }
 
-.training-options {
-  margin: auto;
-  width: 80%;  
+.training-option {  
+  padding: 2rem;
+  margin: 0.8rem;
+  width: 100%;
+  height: 90vh;
+  background: #5d5d5d;   
   text-align: center;
+  overflow: hidden;  
+  transition: all 0.3s ease;
 }
 
-.training-option {
-  position: relative;
-  display: inline-block;
-  padding: 16px;
-  margin: 8px;
-  width: 30%;
-  height: 89vh;
-  background: #5d5d5d;  
-  vertical-align: middle;  
-  text-align: center;  
-  transition: all 0.3s ease;
+@media (min-width: 40rem) {
+  .training-options {
+    display: flex;
+    width: 100%; 
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .training-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 80vh;
+    min-width: 8rem;
+    max-width: 25rem;    
+    background: #5d5d5d;      
+    transition: all 0.3s ease;
+  }
 }
 
 .training-option:hover {
@@ -191,19 +204,17 @@ header h1 + p {
   line-height: normal;
 }
 
+.training-option__image {
+  width: 100%;
+  height: auto;
+}
+
 .training-option__description {
   padding: 1em;
   margin: 0;
   color: white;
   text-align: center;  
   line-height: normal;  
-}
-
-.training-option__cta-button {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translate(-50%);
 }
 
 /*MEAL PLAN/ONLINE-COACHING*/
