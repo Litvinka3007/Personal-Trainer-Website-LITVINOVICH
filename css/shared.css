@@ -365,6 +365,18 @@ dl {
   color: inherit;
 }
 
+.to-top{
+  position: fixed;
+  right: 2%;
+  font-size: 1em;
+  background-color: #272833;
+  bottom: 2%;
+  cursor: pointer;
+  border-radius:0.5em;
+  color: white;
+  outline: none;
+}
+
 /* XLarge */
 
 @media screen and (max-width: 1680px) {
