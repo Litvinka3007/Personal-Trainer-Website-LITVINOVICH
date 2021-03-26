@@ -130,23 +130,46 @@
         </section>
         <section id="online-coaching">
           <h1 class="section-title">Онлайн-ведение</h1>
-          <p class="online-coaching__description">Мои индивидуальные онлайн-пакеты тренировок идеально подходят людям, которым 
-            нужна профессионально разработанная программа тренировок и план питания с учётом их индивидуальных потребностей. 
-            За 6 недель вы уже увидите первые результаты и начнёте формировать новые хорошие привычки. Через 12 недель Вы избавитесь от 
-            нескольких лишних килограммов при необходимости и наберёте сухую мышечную массу. За 24 недели я помогу Вам полностью 
-            изменить Ваше тело и самооценку.</p>
-          <div class="online-coaching__container">
-            <div class="online-coaching__info">              
-              <h2 class="online-coaching__description">Преимущества онлайн-ведения:</h2>
-              <ul class="online-coaching__features">
-                <li>Обратная связь 24/7</li>
-                <li>Видео-библиотека упражнений</li>
-                <li>Индивидуальный план тренировок и питания</li>
-                <li>​Коррекция Вашей техники упражнений – проверка видео-тренировок</li>
-                <li>Cписки продуктов с КБЖУ и информацией, откуда добирать белки, жиры и углеводы</li>
-                <li>Ваш постоянный контроль – проверка рациона, отчётов и внесение необходимых поправок в программу <b>каждые 7 дней!</b></li>
-              </ul>              
-              <h2 class="online-coaching__packages">Варианты пакетов:</h2>  
+          <form class="contact-form" id="contact-form_1" method="POST">
+            <p class="contact-form__title">Оставить заявку на приобретение пакета услуг</p>
+            <p class="contact-form__description"></p>
+            <div class="contact-form__input-wrapper">
+              <input name="name" type="text" class="contact-form__input contact-form__input_name" placeholder="Введите Ваше имя">
+              <div class="contact-form__error contact-form__error_name"></div>
+            </div>
+            <div class="contact-form__input-wrapper">
+              <input name="tel" type="tel" class="contact-form__input contact-form__input_tel" placeholder="Введите Ваш номер телефона">
+              <div class="contact-form__error contact-form__error_tel"></div>
+            </div>
+            <div class="contact-form__input-wrapper"> 
+              <input name="email" type="email" class="contact-form__input contact-form__input_email" placeholder="Введите Ваш e-mail">
+              <div class="contact-form__error contact-form__error_email"></div>
+            </div>
+            <div class="contact-form__input-wrapper">
+              <textarea name="text" class="contact-form__input contact-form__text" placeholder="Оставить комментарий..."></textarea>
+              <div class="contact-form__error contact-form__error_text"></div>
+            </div>
+            <button class="contact-form__button" type="submit">Отправить</button>
+          </form>
+          <div class="online-coaching__info">            
+            <p class="online-coaching__description">Мои индивидуальные онлайн-пакеты тренировок идеально подходят людям, которым 
+              нужна профессионально разработанная программа тренировок и план питания с учётом их индивидуальных потребностей. 
+              За 6 недель вы уже увидите первые результаты и начнёте формировать новые хорошие привычки. Через 12 недель Вы избавитесь от 
+              нескольких лишних килограммов при необходимости и наберёте сухую мышечную массу. За 24 недели я помогу Вам полностью 
+              изменить Ваше тело и самооценку.</p>                      
+            <h2 class="online-coaching__features">Преимущества онлайн-ведения:</h2>
+            <ul class="online-coaching__features">
+              <li>Обратная связь 24/7</li>
+              <li>Видео-библиотека упражнений</li>
+              <li>Индивидуальный план тренировок и питания</li>
+              <li>​Коррекция Вашей техники упражнений – проверка видео-тренировок</li>
+              <li>Cписки продуктов с КБЖУ и информацией, откуда добирать белки, жиры и углеводы</li>
+              <li>Ваш постоянный контроль – проверка рациона, отчётов и внесение необходимых поправок в программу <b>каждые 7 дней!</b></li>
+            </ul>
+          </div>        
+          <div class="online-coaching__packages">
+            <h2 class="online-coaching__packages-title">Варианты пакетов:</h2>
+            <div class="online-coaching__packages-blocks">
               <div class="six-weeks-package">
                 <p class="six-weeks-package__side">Базовый</p>
                 <p class="six-weeks-package__side-back"><b>6 недель<br/> 180$</b><br/> Выплата суммы одним платежом</p>
@@ -158,30 +181,9 @@
               <div class="twenty-four-weeks-package">
                 <p class="twenty-four-weeks-package__side">Премиум</p>
                 <p class="twenty-four-weeks-package__side-back"><b>24 недели<br/> 600$</b><br/> Одним платежом<br/> или 100$/в месяц</p>
-              </div>                      
-            </div>
-            <form class="contact-form" id="contact-form_1" method="POST">
-              <p class="contact-form__title">Оставить заявку на приобретение пакета услуг</p>
-              <p class="contact-form__description"></p>
-              <div class="contact-form__input-wrapper">
-                <input name="name" type="text" class="contact-form__input contact-form__input_name" placeholder="Введите Ваше имя">
-                <div class="contact-form__error contact-form__error_name"></div>
               </div>
-              <div class="contact-form__input-wrapper">
-                <input name="tel" type="tel" class="contact-form__input contact-form__input_tel" placeholder="Введите Ваш номер телефона">
-                <div class="contact-form__error contact-form__error_tel"></div>
-              </div>
-              <div class="contact-form__input-wrapper"> 
-                <input name="email" type="email" class="contact-form__input contact-form__input_email" placeholder="Введите Ваш e-mail">
-                <div class="contact-form__error contact-form__error_email"></div>
-              </div>
-              <div class="contact-form__input-wrapper">
-                <textarea name="text" class="contact-form__input contact-form__text" placeholder="Оставить комментарий..."></textarea>
-                <div class="contact-form__error contact-form__error_text"></div>
-              </div>
-              <button class="contact-form__button" type="submit">Отправить</button>
-            </form>            
-          </div> 
+            </div>              
+          </div>  
         </section>
         <section id="consultations">
           <h1 class="section-title">Консультации</h1>
