@@ -12,7 +12,7 @@
   </head>
   <body class="landing">
     <div id="page-wrapper">
-      <header class="main-header">
+      <!-- <header class="main-header">
         <div>
           <button class="toggle-button">
             <span class="toggle-button__bar"></span>
@@ -59,7 +59,40 @@
             <a href="contacts.html">Контакты</a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
+      <header class="main-header">
+        <h1 id="logo"><a href="index.html">SShpakovsky</a></h1>
+        <nav class="navbar">
+          <div id="menu">
+            <ul class="navbar-nav">
+              <li><a href="index.html" title="Service">Услуги</a></li>
+              <li><a href="about-me.html" title="About-me">Обо мне</a></li>
+              <li><a href="testimonials.html" title="Testimonials">Отзывы</a></li>
+              <li><a href="literature.html" title="Literature">Литература</a></li>
+              <li><a href="contacts.html" title="Contacts">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="gamburger">
+          <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+              <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#00BFFF" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#00BFFF" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#00BFFF" stroke-width="5"/>
+              </svg>
+            </a>
+          </span>
+        </div>
+        <div id="side-menu" class="side-nav">
+          <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+          <a href="index.html" title="Service">Услуги</a>
+          <a href="about-me.html" title="About-me">Обо мне</a>
+          <a href="testimonials.html" title="Testimonials">Отзывы</a>
+          <a href="literature.html" title="Literature">Литература</a>
+          <a href="contacts.html" title="Contacts">Контакты</a>
+        </div>
+      </header>
       <main>
         <section id="banner">
           <div class="content">

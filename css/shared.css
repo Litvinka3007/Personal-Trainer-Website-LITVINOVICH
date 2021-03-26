@@ -64,7 +64,7 @@ img {
 
 /* Header */
 
-#page-wrapper {
+/* #page-wrapper {
   padding-top: 3.5em;
 }
 
@@ -193,6 +193,119 @@ body.landing .main-header {
 
 .mobile-nav__item a {
   font-size: 1rem;
+} */
+
+/*СТИЛЬ ДЛЯ ВИДИМОГО МЕНЮ*/
+.navbar {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-color: #000;
+  z-index: 13;
+  opacity: .9;
+  top: 0;
+  right: 0;
+}
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+}
+.gamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 6px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+.navbar-nav a {
+  font-family: 'latoregular' , sans-serif;
+  letter-spacing: 5px;
+  color: #00BFFF;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 60px;
+  padding: 5px 10px;
+}
+.navbar ul li {
+  list-style-type: none;
+}
+/*----------------------*/
+/*Стиль для скрытого меню*/
+.side-nav{
+  height: 100vh;
+  width: 0;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: #282e34;
+  opacity: .9;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+}
+.side-nav a:hover {
+  color: #00BFFF;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+.side-nav .btn-close:hover  {
+  color: red;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/*Активная ссылка*/
+.Current  {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+/*МЕДИА*/
+@media (max-width: 560px) {
+  .navbar-nav a, .navbar-nav {
+      display: none;
+  }
+  .navbar {
+      position: absolute;
+  }
+}
+@media (min-width: 560px) {
+  .gamburger {
+      display: none;
+  }
 }
 
 /* Icon */
