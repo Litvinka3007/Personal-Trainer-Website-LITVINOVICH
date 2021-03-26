@@ -225,19 +225,8 @@ header h1 + p {
   margin: 4em 5em 6em 5em;
 }
 
-.online-coaching__container {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.online-coaching__info {
-  margin-right: 3em;
-  flex: 1;
-}
-
 .meal-plan__description,
 .online-coaching__description,
-.online-coaching__packages,
 .consultations__description {
   text-indent: 2em;
   text-align: justify;
@@ -248,55 +237,14 @@ header h1 + p {
   list-style-type: disc;
 }
 
-/*ONLINE-COACHING PACKAGES*/
-
-.six-weeks-package,
-.twelve-weeks-package, 
-.twenty-four-weeks-package {
-  display: inline-block;
-  margin: 10px;
-  padding: 20px 10px;
-  width: calc(33% - 24px);  
-  border: 1px solid black;
-  background-color: black;
-  text-align: center;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-}
-
-.six-weeks-package__side,
-.twelve-weeks-package__side, 
-.twenty-four-weeks-package__side {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  margin-right: -50%;              
-  transform: translate(-50%, -40%);
-}
-
-.six-weeks-package:hover,
-.twelve-weeks-package:hover, 
-.twenty-four-weeks-package:hover {
-  transform: rotateY(180deg);
-}
-
-.six-weeks-package .six-weeks-package__side,
-.twelve-weeks-package .twelve-weeks-package__side,
-.twenty-four-weeks-package .twenty-four-weeks-package__side {
-  backface-visibility: hidden;
-}
-
-.six-weeks-package .six-weeks-package__side-back,
-.twelve-weeks-package .twelve-weeks-package__side-back,
-.twenty-four-weeks-package .twenty-four-weeks-package__side-back {
-  overflow: hidden;
-  transform: rotateY(180deg);  
-}
-
 /*FORM*/
 
+#contact-form_1 {
+  margin-left: 3rem;
+}
+
 .contact-form {
-  flex: 2;
+  float: right;  
   box-sizing: border-box;
   width: 100%;
   max-width: 400px;  
@@ -396,6 +344,80 @@ textarea {
       font-size: 18px;
   }
 }
+
+/*ONLINE-COACHING PACKAGES*/
+
+.online-coaching__packages {
+  clear: both;
+}
+
+.six-weeks-package,
+.twelve-weeks-package, 
+.twenty-four-weeks-package {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px 10px;
+  /*width: calc(33% - 24px);*/
+  width: 15vw;
+  height: 30vh;  
+  border: 1px solid black;
+  background-color: black;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+
+.six-weeks-package__side,
+.twelve-weeks-package__side, 
+.twenty-four-weeks-package__side {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;              
+  transform: translate(-50%, -40%);
+}
+
+.six-weeks-package:hover,
+.twelve-weeks-package:hover, 
+.twenty-four-weeks-package:hover {
+  transform: rotateY(180deg);
+}
+
+.six-weeks-package .six-weeks-package__side,
+.twelve-weeks-package .twelve-weeks-package__side,
+.twenty-four-weeks-package .twenty-four-weeks-package__side {
+  backface-visibility: hidden;
+}
+
+.six-weeks-package .six-weeks-package__side-back,
+.twelve-weeks-package .twelve-weeks-package__side-back,
+.twenty-four-weeks-package .twenty-four-weeks-package__side-back {
+  overflow: hidden;
+  transform: rotateY(180deg);  
+}
+
+/*@media all and (max-width: 1010px) {
+  .online-coaching__packages-blocks {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .six-weeks-package,
+  .twelve-weeks-package, 
+  .twenty-four-weeks-package {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px 10px;
+    width: 15vw;
+    height: 30vh;  
+    border: 1px solid black;
+    background-color: black;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+  }
+}*/
 
 /*CONSULTATIONS*/
 
