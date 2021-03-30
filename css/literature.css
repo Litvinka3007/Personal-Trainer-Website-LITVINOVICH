@@ -19,7 +19,7 @@ main {
 .book {
   margin: 3rem 0 10rem 0;
   transform: translateX(400%);
-  transition: transform 0.4s ease;
+  transition: transform 1s ease;
 }
 
 .book:nth-of-type(even) {
