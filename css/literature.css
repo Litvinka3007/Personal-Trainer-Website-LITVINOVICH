@@ -18,6 +18,16 @@ main {
 
 .literature-recommendations__book {
   margin: 3rem 0 10rem 0;
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.literature-recommendations__book:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.literature-recommendations__book.show {
+  transform: translateX(0);
 }
 
 .literature-recommendations__subtitle {  
