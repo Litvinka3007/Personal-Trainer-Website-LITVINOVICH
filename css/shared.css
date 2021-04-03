@@ -17,7 +17,7 @@ html, body {
 body, input, select, textarea {
   color: rgba(255, 255, 255, 0.75);
   font-family: "Roboto", Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 100;
   line-height: 1.75em;
 }
@@ -52,6 +52,7 @@ ul {
 }
 
 #logo a {
+  font-size: 2rem;
   border: 0;
   color: #ffffff;  
   text-decoration: none;
@@ -62,140 +63,13 @@ img {
   height: auto;
 }
 
-/* Header */
-
-/* #page-wrapper {
-  padding-top: 3.5em;
-}
+/*СТИЛЬ ДЛЯ ВИДИМОГО МЕНЮ*/
 
 .main-header {
-  position: fixed;
-  top: 0;
-  left: 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;  
-  width: 100%;
-  height: 3.5em;  
-  box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
-  background: rgba(39, 40, 51, 0.965);  
-  line-height: 3.5em;
-  z-index: 100;  
-  cursor: default;
+  justify-content: space-around;
 }
 
-.main-header h1 {
-  position: absolute;
-  top: 0;
-  left: 1.25em;
-  margin: 0;
-  height: inherit;  
-  line-height: inherit;  
-}
-
-body.landing #page-wrapper {
-  padding-top: 0;
-}
-
-body.landing .main-header {
-  position: absolute;
-  box-shadow: none;
-  background: transparent;  
-}
-
-.toggle-button {
-  padding-top: 0;
-  padding-bottom: 0;
-  width: 3rem;
-  vertical-align: middle;
-  border: none;
-  background: transparent;  
-  cursor: pointer;  
-}
-
-.toggle-button:focus {
-  outline: none;
-}
-
-.toggle-button__bar {
-  display: block;
-  margin: 0.6rem 0;
-  width: 100%;
-  height: 0.2rem;
-  background: white;  
-}
-
-.main-nav {
-  display: none;
-}
-
-.main-nav__items {
-  display: flex;
-  padding: 0;
-  margin: 0;  
-  list-style: none;  
-}
-
-.main-nav__item {
-  margin: 0 1rem;
-}
-
-.main-nav__item a,
-.mobile-nav__item a {
-  padding: 0.2rem 0;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;  
-}
-
-.main-nav__item a:hover,
-.main-nav__item a:active {
-  color: #475055;
-  font-weight: bold;
-}
-
-@media (min-width: 47rem) {
-  .toggle-button {
-      display: none;
-  }
-
-  .main-nav {
-      display: flex;
-  }
-}
-
-.mobile-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  width: 25%;
-  height: 100vh;
-  background: black;
-  z-index: 101;  
-}
-
-.mobile-nav__items {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0 auto;
-  width: 25%;
-  height: 100%;
-  list-style: none;  
-}
-
-.mobile-nav__item {
-  margin: 1rem 0;
-}
-
-.mobile-nav__item a {
-  font-size: 1rem;
-} */
-
-/*СТИЛЬ ДЛЯ ВИДИМОГО МЕНЮ*/
 .navbar {
   position: fixed;
   display: -webkit-box;
@@ -216,8 +90,7 @@ body.landing .main-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  width: 500px;
+  justify-content: space-around;  
 }
 .gamburger {
   display: -webkit-box;
@@ -227,16 +100,10 @@ body.landing .main-header {
   -ms-flex-pack: center;
   justify-content: center;
   padding-top: 6px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  z-index: 3;
 }
-.navbar-nav a {
-  font-family: 'latoregular' , sans-serif;
-  letter-spacing: 5px;
-  color: #00BFFF;
+.navbar-nav a {  
+  letter-spacing: 2px;
+  color: #fff;
   text-decoration: none;
   font-size: 1rem;
   text-transform: uppercase;
@@ -246,13 +113,13 @@ body.landing .main-header {
 .navbar ul li {
   list-style-type: none;
 }
-/*----------------------*/
+
 /*Стиль для скрытого меню*/
 .side-nav{
   height: 100vh;
   width: 0;
   position: absolute;
-  z-index: 5;
+  z-index: 99;
   top: 0;
   left: 0;
   background-color: #282e34;
@@ -270,7 +137,7 @@ body.landing .main-header {
   display: block;
 }
 .side-nav a:hover {
-  color: #00BFFF;
+  color: white;
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
@@ -290,11 +157,11 @@ body.landing .main-header {
 }
 /*Активная ссылка*/
 .Current  {
-  background-color: #f4f4f4;
+  background-color: #5d5d5d;
   border-radius: 5px;
 }
 /*МЕДИА*/
-@media (max-width: 560px) {
+@media (max-width: 740px) {
   .navbar-nav a, .navbar-nav {
       display: none;
   }
@@ -302,7 +169,7 @@ body.landing .main-header {
       position: absolute;
   }
 }
-@media (min-width: 560px) {
+@media (min-width: 740px) {
   .gamburger {
       display: none;
   }
