@@ -7,8 +7,8 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         var scrolled = $(window).scrollTop(); // Высота скролла в px
-        var firstScrollUp = false; // Параметр начала сколла вверх
-        var firstScrollDown = false; // Параметр начала сколла вниз
+        var firstScrollUp = false; // Параметр начала скролла вверх
+        var firstScrollDown = false; // Параметр начала скролла вниз
 
         // Если скроллим
         if ( scrolled > 0 ) {
