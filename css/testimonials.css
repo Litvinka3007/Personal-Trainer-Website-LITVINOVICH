@@ -1,5 +1,5 @@
 main {
-  padding: 5rem 9rem;
+  padding: 0.5rem 9rem 5rem 9rem;
 }
 
 .testimonials__title {  
@@ -14,7 +14,7 @@ main {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: space-between;
-  padding: 1rem 0 5rem 0;
+  padding: 0 0 5rem 0;
 }
 
 .testimonials__item {

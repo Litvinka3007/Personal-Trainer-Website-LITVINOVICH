@@ -23,7 +23,6 @@ body, input, select, textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 1em 0;
   color: #ffffff;
   font-weight: 300;
   line-height: 1em;  
@@ -52,7 +51,8 @@ ul {
 }
 
 #logo {
-  padding: 0.5rem 0 0 1rem;  
+  padding: 0.5rem 0 0.5rem 1rem;
+  margin: 0;  
 }
 
 #logo a {
@@ -71,8 +71,8 @@ img {
 
 .main-header {
   display: flex;
-  justify-content: space-between;
-  background-color: black;  
+  justify-content: space-between;  
+  background-color: #272833;  
 }
 
 .navbar {
@@ -84,11 +84,9 @@ img {
   -ms-flex-pack: flex-end;
   justify-content: flex-end;
   text-align: center;
-  /*width: 100%;*/
-  /*background-color: #000;*/
   z-index: 13;
   opacity: .9;
-  top: 0.5rem;
+  top: 0.35rem;
   right: 0;
 }
 
@@ -97,7 +95,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   justify-content: space-around;
-  padding-right: 1em;  
+  padding: 0 1rem 0.5rem 1rem;
+  margin: 0;  
 }
 
 .gamburger {

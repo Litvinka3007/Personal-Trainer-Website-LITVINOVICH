@@ -11,53 +11,38 @@
   <body class="landing">
     <div id="page-wrapper">
       <header class="main-header">
-        <div>
-          <button class="toggle-button">
-            <span class="toggle-button__bar"></span>
-            <span class="toggle-button__bar"></span>
-            <span class="toggle-button__bar"></span>
-          </button>
-          <h1 id="logo"><a href="index.html">SShpakovsky</a></h1>
-        </div>
-        <nav class="main-nav">
-          <ul class="main-nav__items">
-            <li class="main-nav__item">
-              <a href="index.html">Услуги</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="about-me.html">Обо мне</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="testimonials.html">Отзывы</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="literature.html">Литература</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="contacts.html">Контакты</a>
-            </li>
-          </ul>
+        <h1 id="logo"><a href="index.html">SShpakovsky</a></h1>
+        <nav class="navbar">
+          <div id="menu">
+            <ul class="navbar-nav">
+              <li><a href="index.html" title="Service">Услуги</a></li>
+              <li><a href="about-me.html" title="About-me">Обо мне</a></li>
+              <li><a href="testimonials.html" title="Testimonials">Отзывы</a></li>
+              <li><a href="literature.html" title="Literature">Литература</a></li>
+              <li><a href="contacts.html" title="Contacts">Контакты</a></li>
+            </ul>
+          </div>
         </nav>
-      </header>
-      <nav class="mobile-nav">
-        <ul class="mobile-nav__items">
-          <li class="mobile-nav__item">
-            <a href="index.html">Услуги</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a href="about-me.html">Обо мне</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a href="testimonials.html">Отзывы</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a href="literature.html">Литература</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>      
+        <div class="gamburger">
+          <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+              <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#ffffff" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#ffffff" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#ffffff" stroke-width="5"/>
+              </svg>
+            </a>
+          </span>
+        </div>
+        <div id="side-menu" class="side-nav">
+          <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+          <a href="index.html" title="Service">Услуги</a>
+          <a href="about-me.html" title="About-me">Обо мне</a>
+          <a href="testimonials.html" title="Testimonials">Отзывы</a>
+          <a href="literature.html" title="Literature">Литература</a>
+          <a href="contacts.html" title="Contacts">Контакты</a>
+        </div>
+      </header>      
       <main>
         <section class="testimonials">
           <h1 class="testimonials__title">Отзывы клиентов</h1>
@@ -127,5 +112,11 @@
         </ul>
       </footer>
     </div>
+
+    <script type="text/javascript" src="js/hidden-menu.js" ></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/hidden-navbar.js"></script>
+    <script src="js/active-link.js"></script>
+    
   </body>
 </html>

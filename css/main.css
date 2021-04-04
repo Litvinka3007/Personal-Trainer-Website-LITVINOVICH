@@ -1,3 +1,7 @@
+.main-header__main {
+  background-color: black;
+}
+
 /* BANNER */
 
 #banner {
@@ -193,7 +197,6 @@ header h1 + p {
     background: #5d5d5d;      
     transition: all 0.3s ease;
   }
-
 }
 
 .training-option:hover {
