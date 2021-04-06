@@ -158,8 +158,6 @@ header h1 + p {
 .training-option {  
   padding: 0 2rem 2rem 2rem;
   margin: 0.8rem;
-  /*width: 25vw;
-  height: 75vh;*/
   width: 25vw;
   height: 75vh;
   background: #5d5d5d;   
@@ -172,9 +170,8 @@ header h1 + p {
   .training-options {
     display: flex;
     flex-wrap: wrap;
-    /*width: 100%;*/ 
     justify-content: center;
-    /*align-items: flex-start;*/
+    align-items: flex-start;
   }
 
   /*.training-option {
@@ -184,8 +181,8 @@ header h1 + p {
     height: 83vh;
     min-width: 8rem;
     max-width: 25rem;    
-  }*/
-}
+  }
+}*/
 
 .training-option:hover {
   transform: scale(1.1);
@@ -332,7 +329,7 @@ textarea {
       margin: 0 -15px 30px;
       padding: 15px 30px;
       width: calc(100% + 30px);
-      font-size: 18px;
+      font-size: 14px;
   }
 }
 
@@ -402,4 +399,99 @@ textarea {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+
+@media all and (max-width: 767px) {
+  #banner .content {
+    padding: 1em 2em 3em 2em;
+  }
+
+  .main-page__cta-button {
+    margin-top: 2rem;
+  }
+
+  #banner .content header h1 {
+    font-size: 2em;
+  }
+
+  header h1 + p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  .main-page__cta-button-caption {
+    font-size: 0.8rem;
+    line-height: 1em;
+  }
+
+  #banner .content .main-photo {    
+    display: inline-block;
+    width: 20em;
+    height: 20em;
+    border-radius: 100%;
+    vertical-align: middle; 
+    margin-left: 0;   
+  }
+
+  .training-option {
+    width: auto;
+    height: 70vh;
+  }
+  
+  .training-option__name {
+    font-size: 1.3em;
+  }
+
+  .training-option__description {
+    font-size: 1em;
+  }
+
+  #meal-plan, #online-coaching {
+    margin: 3em 3em 4em 3em;
+  }
+
+  #consultations {
+    margin: 3em 3em 6em 3em;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  #contact-form_1 {    
+    margin-bottom: 1.5em;
+  }
+
+  .contact-form__input {
+    font-size: 1em;
+  }
+
+  .contact-form__button {
+    margin: 1em auto 0;
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .training-options {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .training-option {
+    padding: 0 2rem 2rem 2rem;
+    margin: 0.5rem;
+    width: 50vw;
+    height: 50vh;
+    background: #5d5d5d;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  #contact-form_1 {
+    margin: 0 0 1rem 2rem;
+  }
 }
