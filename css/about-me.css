@@ -30,7 +30,7 @@ main {
   text-align: justify;
 }
 
-@media all and (max-width: 1024px) {
+@media  (min-width: 320px) and (max-width: 1024px) {
   main {
     padding: 0 3rem 0 3rem;
   }
@@ -48,5 +48,9 @@ main {
 
   .about-trainer__info {
     margin-top: 1em;
+  }
+
+  .about-trainer__text {
+    line-height: 1.5em;
   }
 }
