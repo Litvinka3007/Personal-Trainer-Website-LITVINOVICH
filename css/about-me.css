@@ -29,3 +29,24 @@ main {
   text-indent: 2em;
   text-align: justify;
 }
+
+@media all and (max-width: 1024px) {
+  main {
+    padding: 0 3rem 0 3rem;
+  }
+
+  .about-trainer__photo {
+    float: right;
+    margin: 0 0 1em 1em;
+    height: auto;
+    width: 40%;
+  }
+
+  .about-trainer {
+    margin: 2rem 0;
+  }
+
+  .about-trainer__info {
+    margin-top: 1em;
+  }
+}

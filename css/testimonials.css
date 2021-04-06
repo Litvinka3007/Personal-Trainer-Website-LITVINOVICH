@@ -43,3 +43,39 @@ video {
   margin-right: -50%;
   transform: translate(-50%, -50%); 
 }
+
+@media (max-width: 414px) {
+  main {
+    padding: 1rem 2rem 4rem 2rem;
+  }
+
+  .testimonials__title {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  video {
+    padding: 0 2rem 0 2rem;
+    width: 280px;
+    height: auto;
+  }
+
+  .testimonials__client-message {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .testimonials__cta-button {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.7em;
+  }
+
+  *, *:before, *:after {
+    box-sizing: content-box; 
+}
+}

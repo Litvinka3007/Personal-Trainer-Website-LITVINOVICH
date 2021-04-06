@@ -5005,7 +5005,7 @@ jQuery.event = {
 		if ( !( events = elemData.events ) ) {
 			events = elemData.events = {};
 		}
-		if ( !( eventHandle = elemData.handle ) ) {
+		/*if ( !( eventHandle = elemData.handle ) ) {
 			eventHandle = elemData.handle = function( e ) {
 
 				// Discard the second event of a jQuery.event.trigger() and
@@ -5013,7 +5013,7 @@ jQuery.event = {
 				return typeof jQuery !== "undefined" && jQuery.event.triggered !== e.type ?
 					jQuery.event.dispatch.apply( elem, arguments ) : undefined;
 			};
-		}
+		}*/
 
 		// Handle multiple events separated by a space
 		types = ( types || "" ).match( rnothtmlwhite ) || [ "" ];

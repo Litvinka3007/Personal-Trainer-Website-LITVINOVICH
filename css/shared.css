@@ -35,14 +35,14 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 {
-  font-size: 2em;
-  line-height: 1.5em;
+  font-size: 3rem;
+  line-height: 2.5rem;
   letter-spacing: -0.025em;
 }
 
 h2 {
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   letter-spacing: -0.025em;
 }
 
@@ -76,7 +76,7 @@ img {
 }
 
 .navbar {
-  position: fixed;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,6 +377,7 @@ dl {
   border-radius:0.5em;
   color: white;
   outline: none;
+  z-index: 999;
 }
 
 /* XLarge */
