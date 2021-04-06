@@ -77,5 +77,16 @@ video {
 
   *, *:before, *:after {
     box-sizing: content-box; 
+  }
 }
+
+@media (min-width: 768px) and (max-width: 875px){
+  main {
+    padding: 0.5rem 3rem 5rem 3rem;
+  }
+
+  video {
+    width: 320px;
+    height: auto;
+  }
 }
