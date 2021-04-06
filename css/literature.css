@@ -1,0 +1,181 @@
+main {
+  padding: 0 9em 6em 9em;
+}
+
+.literature-recommendations__title {  
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.literature-recommendations__info {
+  margin-bottom: 3em;
+  color: white;
+  text-indent: 2em;
+  text-align: justify;
+}
+
+.book {
+  margin: 3em 0 10em 0;
+  transform: translateX(400%);
+  transition: transform 1s ease;
+}
+
+.book:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.book.show {
+  transform: translateX(0);
+}
+
+.literature-recommendations__subtitle {  
+  color: white;
+  font-size: 1em;
+  text-align: center;
+}
+
+.literature-recommendations__book-name {
+  margin: 3em 0 2em 0;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+}
+
+.literature-recommendations__book-image {
+  max-width: 15%; 
+  height: auto;
+}
+
+.leftimg {
+  float: left; 
+  margin: 0 3em 3em 0; 
+}
+
+.rightimg  {
+  float: right; 
+  margin: 0 0 3em 3em; 
+}
+
+.literature-recommendations__book-description {
+  color: white;
+  text-indent: 2em;
+  text-align: justify;
+}
+
+article div:last-child {
+  margin-bottom: 4em;
+}
+
+@media (min-width: 280px)  and (max-width: 600px) {
+  main {
+    padding: 0 3em 0 3em;
+  }
+
+  .literature-recommendations__book-name {
+    margin: 1em 0 2em 0;
+    line-height: 1.5em;
+  }
+
+  .literature-recommendations__book-description {
+    line-height: 1.5em;
+  }
+
+  .leftimg {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+
+  .rightimg {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+
+  .literature-recommendations__book-image {
+    max-width: 30%;
+    height: auto;
+  }
+
+  .book {
+    margin: 3em 0 3em 0;
+  }
+
+  .book {
+    transform: none;
+  }
+  
+  .book:nth-of-type(even) {
+    transform: none;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 820px) {
+  main {
+    padding: 1em 4em 2em 4em;
+  }
+
+  .book {
+    margin: 3em 0 4em 0;
+    transform: translateX(400%);
+    transition: transform 1s ease;
+  }
+
+  .leftimg {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+
+  .rightimg {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+
+  .literature-recommendations__book-image {
+    max-width: 20%;
+    height: auto;
+  }
+
+  .book {
+    transform: none;
+  }
+  
+  .book:nth-of-type(even) {
+    transform: none;
+  }
+}
+
+@media (min-width: 821px) and (max-width: 1024px) {
+  main {
+    padding: 1em 6em 6em 6em;
+  }
+  
+  .literature-recommendations__book-image {
+    max-width: 20%;
+    height: auto;
+  }
+
+  .book {
+    margin: 3em 0 6em 0;
+    transform: translateX(400%);
+    transition: transform 1s ease;
+  }
+
+  .leftimg {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+
+  .rightimg {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+  
+  .book {
+    transform: none;
+  }
+  
+  .book:nth-of-type(even) {
+    transform: none;
+  }
+}

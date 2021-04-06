@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+  </head>
+  <body class="landing">
+    <div id="page-wrapper">
+      <header class="main-header">
+        <h1 id="logo"><a href="index.html">SShpakovsky</a></h1>
+        <nav class="navbar">
+          <div id="menu">
+            <ul class="navbar-nav">
+              <li><a href="index.html" title="Услуги">Услуги</a></li>
+              <li><a href="about-me.html" title="Обо мне">Обо мне</a></li>
+              <li><a href="testimonials.html" title="Отзывы">Отзывы</a></li>
+              <li><a href="literature.html" title="Литература">Литература</a></li>
+              <li><a href="contacts.html" title="Контакты">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="gamburger">
+          <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+              <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#ffffff" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#ffffff" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#ffffff" stroke-width="5"/>
+              </svg>
+            </a>
+          </span>
+        </div>
+        <div id="side-menu" class="side-nav">
+          <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+          <a href="index.html" title="Услуги">Услуги</a>
+          <a href="about-me.html" title="Обо мне">Обо мне</a>
+          <a href="testimonials.html" title="Отзывы">Отзывы</a>
+          <a href="literature.html" title="Литература">Литература</a>
+          <a href="contacts.html" title="Контакты">Контакты</a>
+        </div>
+      </header>      
+      <main>
+        <section class="testimonials">
+          <h1 class="testimonials__title">Отзывы клиентов</h1>
+          <div class="testimonials__content">
+            <article class="testimonials__item testimonials__item1">
+              <video controls>
+                <source src="video/testimonial1.mp4" type="video/mp4">
+                <source src="video/testimonial1.ogv" type="video/ogg">  
+              </video>
+              <h2 class="testimonials__client-name">Карина</h2>
+              <p class="testimonials__client-message">«‎Этот тренер для меня — просто всё»</p>
+            </article>
+            <article class="testimonials__item testimonials__item2">
+              <video controls>
+                <source src="video/testimonial2.mp4" type="video/mp4">
+                <source src="video/testimonial2.ogv" type="video/ogg">  
+              </video>
+              <h2 class="testimonials__client-name">Анна</h2>
+              <p class="testimonials__client-message">«‎Мне больше всего нравится в нём, что он грамотный — он понимает биомеханику, не даёт упражнения просто так»</p>
+            </article>
+            <article class="testimonials__item testimonials__item3">
+              <video controls>
+                <source src="video/testimonial3.mp4" type="video/mp4">
+                <source src="video/testimonial3.ogv" type="video/ogg">  
+              </video>
+              <h2 class="testimonials__client-name">Татьяна</h2>
+              <p class="testimonials__client-message">«‎Весёлый, но расслабиться не даст»</p>
+            </article>
+            <article class="testimonials__item testimonials__item4">
+              <video controls>
+                <source src="video/testimonial4.mp4" type="video/mp4">
+                <source src="video/testimonial4.ogv" type="video/ogg">  
+              </video>
+              <h2 class="testimonials__client-name">Евгения</h2>
+              <p class="testimonials__client-message">«‎Когда я пришла в тренажёрный зал, попросила себе тренера построже»</p>
+            </article>
+            <article class="testimonials__item testimonials__item5">
+              <video controls>
+                <source src="video/testimonial5.mp4" type="video/mp4">
+                <source src="video/testimonial5.ogv" type="video/ogg">  
+              </video>
+              <h2 class="testimonials__client-name">Мама и дочка</h2>
+              <p class="testimonials__client-message">«‎Общительный, дружелюбный, приятный»</p>
+            </article>
+            <article class="testimonials__item testimonials__item6">
+              <video controls>
+                <source src="video/testimonial6.mp4" type="video/mp4">
+                <source src="video/testimonial6.ogv" type="video/ogg">  
+              </video>
+              <h2 class="testimonials__client-name">Ангелина</h2>
+              <p class="testimonials__client-message">«‎Вы говорите свою цель — он подбирает средства, с помощью которых вы её вместе достигнете»</p>
+            </article>
+          </div>
+          <div>
+            <button class="testimonials__cta-button">Записаться на первую бесплатную тренировку</button>
+          </div> 
+        </section>         
+      </main>
+      <footer id="footer">
+        <ul class="icons">
+          <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; Все права защищены.</li><li>Дизайн: <a href="https://github.com/Litvinka3007">Litvinka3007</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="js/hidden-menu.js" ></script>
+    <script src="js/jquery-3.2.1.js"></script>    
+    <script src="js/active-link.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,56 @@
+main {
+  padding: 0 4rem 0 4rem;
+}
+
+.about-trainer {
+  margin: 3rem 0;
+}
+
+.about-trainer__info {
+  margin-top: 3em;
+}
+
+.about-trainer__title {
+  color: white;
+  font-size: 1.5rem;  
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-trainer__photo {
+  float: right;
+  margin: 0 0 3em 3em;
+  max-width: 40%; 
+  height: auto;
+}
+
+.about-trainer__text {
+  color: white;
+  text-indent: 2em;
+  text-align: justify;
+}
+
+@media  (min-width: 320px) and (max-width: 1024px) {
+  main {
+    padding: 0 3rem 0 3rem;
+  }
+
+  .about-trainer__photo {
+    float: right;
+    margin: 0 0 1em 1em;
+    height: auto;
+    width: 40%;
+  }
+
+  .about-trainer {
+    margin: 2rem 0;
+  }
+
+  .about-trainer__info {
+    margin-top: 1em;
+  }
+
+  .about-trainer__text {
+    line-height: 1.5em;
+  }
+}

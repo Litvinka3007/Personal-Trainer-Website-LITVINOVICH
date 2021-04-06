@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/contacts.css">
+  </head>
+  <body class="landing">
+    <div id="page-wrapper">
+      <header class="main-header">
+        <h1 id="logo"><a href="index.html">SShpakovsky</a></h1>
+        <nav class="navbar">
+          <div id="menu">
+            <ul class="navbar-nav">
+              <li><a href="index.html" title="Услуги">Услуги</a></li>
+              <li><a href="about-me.html" title="Обо мне">Обо мне</a></li>
+              <li><a href="testimonials.html" title="Отзывы">Отзывы</a></li>
+              <li><a href="literature.html" title="Литература">Литература</a></li>
+              <li><a href="contacts.html" title="Контакты">Контакты</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="gamburger">
+          <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+              <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#ffffff" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#ffffff" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#ffffff" stroke-width="5"/>
+              </svg>
+            </a>
+          </span>
+        </div>
+        <div id="side-menu" class="side-nav">
+          <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+          <a href="index.html" title="Услуги">Услуги</a>
+          <a href="about-me.html" title="Обо мне">Обо мне</a>
+          <a href="testimonials.html" title="Отзывы">Отзывы</a>
+          <a href="literature.html" title="Литература">Литература</a>
+          <a href="contacts.html" title="Контакты">Контакты</a>
+        </div>
+      </header>
+      <main>
+        <div class="contacts-container">
+          <form class="contact-form" id="contact-form_1" method="POST">
+            <p class="contact-form__title">Напишите мне</p>
+            <p class="contact-form__description"></p>
+            <div class="contact-form__input-wrapper">
+              <input name="name" type="text" class="contact-form__input contact-form__input_name" placeholder="Введите Ваше имя">
+              <div class="contact-form__error contact-form__error_name"></div>
+            </div>
+            <div class="contact-form__input-wrapper">
+              <input name="tel" type="tel" class="contact-form__input contact-form__input_tel" placeholder="Введите Ваш номер телефона">
+              <div class="contact-form__error contact-form__error_tel"></div>
+            </div>
+            <div class="contact-form__input-wrapper"> 
+              <input name="email" type="email" class="contact-form__input contact-form__input_email" placeholder="Введите Ваш e-mail">
+              <div class="contact-form__error contact-form__error_email"></div>
+            </div>
+            <div class="contact-form__input-wrapper">
+              <textarea name="text" class="contact-form__input contact-form__text" placeholder="Введите текст сообщения..."></textarea>
+              <div class="contact-form__error contact-form__error_text"></div>
+            </div>
+            <button class="contact-form__button" type="submit">Отправить</button>
+          </form>
+          <div class="contacts__items">
+            <div class="contacts__item contact__address">
+              <h2>Адрес</h2>
+              <p class="contacts__item-content">г. Гродно<br/> ул. Огинского, 12<br/> ТЦ "Парус"</p>
+            </div>
+            <div class="contacts__item contact__telephone">
+              <h2>Телефон</h2>
+              <p class="contacts__item-content">(8033) 688-33-24</p>
+            </div>
+            <div class="contacts__item contact__email">
+              <h2>E-mail</h2>
+              <p class="contacts__item-content">shpakovsky@mail.ru</p>
+            </div>
+          </div>    
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995.0375795610009!2d23.81647102081795!3d53.61823197766126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dfd92c879d31f3%3A0x8d084e7f7bd85cb!2z0KLRgNC10L3QsNC20LXRgNC90YvQuSDQt9Cw0LsgQWxsU3RhcnNHeW0!5e0!3m2!1sru!2sby!4v1615757208780!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="contacts-map"></iframe>   
+        </div>
+      </main>
+      <footer id="footer">
+        <ul class="icons">
+          <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; Все права защищены.</li><li>Дизайн: <a href="https://github.com/Litvinka3007">Litvinka3007</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="js/hidden-menu.js" ></script>
+    <script src="js/jquery-3.2.1.js"></script>    
+    <script src="js/active-link.js"></script>
+    
+  </body>
+</html>
