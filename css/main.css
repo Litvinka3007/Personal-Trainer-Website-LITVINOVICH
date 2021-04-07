@@ -145,7 +145,7 @@ header h1 + p {
 /*TRAININGS*/
 
 #trainings {
-  margin: 2em 0 2em 0;
+  margin: 2em 1em 2em 1em;
 }
 
 .section-title {
@@ -155,34 +155,14 @@ header h1 + p {
   text-transform: uppercase;
 }
 
-.training-option {  
-  padding: 0 2rem 2rem 2rem;
-  margin: 0.8rem;
-  width: 25vw;
-  height: 75vh;
+.training-option {
+  padding: 1rem 2rem 2rem 2rem;
+  margin: 0.8rem;   
   background: #5d5d5d;   
   text-align: center;
   overflow: hidden;  
   transition: all 0.3s ease;
 }
-
-@media (min-width: 1000px) {
-  .training-options {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  /*.training-option {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;    
-    height: 83vh;
-    min-width: 8rem;
-    max-width: 25rem;    
-  }
-}*/
 
 .training-option:hover {
   transform: scale(1.1);
@@ -203,6 +183,25 @@ header h1 + p {
   color: white;
   text-align: center;  
   line-height: normal;  
+}
+
+@media (min-width: 45rem) {
+  .training-options {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .training-option {
+    width: 30%;
+    min-width: 13rem;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35rem;
+  }
 }
 
 /*MEAL PLAN/ONLINE-COACHING*/
@@ -433,10 +432,10 @@ textarea {
     margin-left: 0;   
   }
 
-  .training-option {
+  /*.training-option {
     width: auto;
     height: 70vh;
-  }
+  }*/
   
   .training-option__name {
     font-size: 1.3em;
@@ -473,7 +472,7 @@ textarea {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .training-options {
+  /*.training-options {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
@@ -489,7 +488,7 @@ textarea {
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
-  }
+  }*/
 
   #contact-form_1 {
     margin: 0 0 1rem 2rem;
