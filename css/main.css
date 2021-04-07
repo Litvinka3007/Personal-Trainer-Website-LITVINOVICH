@@ -67,9 +67,8 @@
   border-radius: 100%;  
 }
 
-@media all and (max-width: 767px) {
-  #banner .content {
-    padding: 1em 1em 3em 1em;
+@media all and (max-width: 1006px) {
+  #banner .content {    
     margin: 0;    
     text-align: center;
   }
@@ -79,6 +78,18 @@
     width: 20em;
     height: 20em;
     border-radius: 100%;
+  }
+}
+
+@media all and (max-width: 414px) {
+  #banner .content {
+    padding: 1em 1em 3em 1em;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 1175px) {
+  #banner .content {
+    padding: 3em 1em 3em 1em;
   }
 }
 
@@ -415,7 +426,7 @@ textarea {
   transform: translate(-50%, -50%);
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 990px) {
   .main-page__cta-button {
     margin-top: 2rem;
   }
