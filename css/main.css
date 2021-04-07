@@ -383,6 +383,7 @@ textarea {
   height: 200px;  
   border: 1px solid black;
   background-color: black;
+  color: white;
   text-align: center;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
