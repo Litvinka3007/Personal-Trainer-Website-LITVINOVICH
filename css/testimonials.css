@@ -90,3 +90,10 @@ video {
     height: auto;
   }
 }
+
+@media (min-width: 83rem) {
+  .testimonials {
+    max-width: 1338px;
+    margin: auto;
+  }
+}

@@ -238,6 +238,15 @@ header h1 + p {
   margin: 4em 5em 6em 5em;
 }
 
+@media (min-width: 100rem) {
+  #meal-plan,
+  #online-coaching,
+  #consultations {
+    max-width: 1400px;
+    margin: auto;
+  }
+}
+
 .meal-plan__description,
 .online-coaching__description,
 .consultations__description {
