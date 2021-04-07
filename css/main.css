@@ -67,6 +67,21 @@
   border-radius: 100%;  
 }
 
+@media all and (max-width: 767px) {
+  #banner .content {
+    padding: 1em 1em 3em 1em;
+    margin: 0;    
+    text-align: center;
+  }
+
+  #banner .content .main-photo {    
+    margin: 0;
+    width: 20em;
+    height: 20em;
+    border-radius: 100%;
+  }
+}
+
 /*Button*/
 
 .main-page__cta-button {
@@ -401,10 +416,6 @@ textarea {
 }
 
 @media all and (max-width: 767px) {
-  #banner .content {
-    padding: 1em 2em 3em 2em;
-  }
-
   .main-page__cta-button {
     margin-top: 2rem;
   }
@@ -423,20 +434,6 @@ textarea {
     line-height: 1em;
   }
 
-  #banner .content .main-photo {    
-    display: inline-block;
-    width: 20em;
-    height: 20em;
-    border-radius: 100%;
-    vertical-align: middle; 
-    margin-left: 0;   
-  }
-
-  /*.training-option {
-    width: auto;
-    height: 70vh;
-  }*/
-  
   .training-option__name {
     font-size: 1.3em;
   }
@@ -472,24 +469,6 @@ textarea {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /*.training-options {
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .training-option {
-    padding: 0 2rem 2rem 2rem;
-    margin: 0.5rem;
-    width: 50vw;
-    height: 50vh;
-    background: #5d5d5d;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-  }*/
-
   #contact-form_1 {
     margin: 0 0 1rem 2rem;
   }
