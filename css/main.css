@@ -428,8 +428,7 @@ textarea {
 
 /*CONSULTATIONS*/
 
-.consultations__cta-button, 
-.meal-plan__button {
+.consultations__cta-button {
   position: absolute;
   margin-top: 2rem;
   left: 50%;
